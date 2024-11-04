@@ -1,4 +1,4 @@
-import 'package:dice_app/controller/dice_provider.dart';
+import 'package:dice_app/controller/dice_controller.dart';
 import 'package:dice_app/view/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => DiceProvider(),
+      create: (context) => DiceController(),
       child: const MaterialApp(home: HomeScreen()),
     );
   }
